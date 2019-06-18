@@ -45,7 +45,7 @@
   }
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+      bottom: 200px; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
   }
   .bg-1 {
@@ -195,26 +195,26 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" style="height: 700px; background-color: #000000; min-height: 500px">
       <div class="item active">
-        <img src="ny.jpg" alt="New York" width="1200" height="700">
-        <div class="carousel-caption">
+        <img src="/band.jpg" alt="New York" style="width: unset;">
+        <div class="carousel-caption" style="position: sticky !important;">
           <h3>New York</h3>
           <p>The atmosphere in New York is lorem ipsum.</p>
         </div>      
       </div>
 
       <div class="item">
-        <img src="chicago.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
+        <img src="/tylerGuitar.jpg" alt="Chicago" style="width: unset;">
+        <div class="carousel-caption" style="position: sticky !important;">
           <h3>Chicago</h3>
           <p>Thank you, Chicago - A night we won't forget.</p>
         </div>      
       </div>
     
       <div class="item">
-        <img src="la.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
+        <img src="tyler.jpg" alt="Los Angeles" style="width: unset;">
+        <div class="carousel-caption" style="position: sticky !important;">
           <h3>LA</h3>
           <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
         </div>      
