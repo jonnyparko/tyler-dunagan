@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme The Band</title>
+  <title>Tyler Dunagan Music</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -24,6 +24,7 @@
   .container {
     padding: 80px 120px;
   }
+  
   .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -151,10 +152,18 @@
   textarea {
     resize: none;
   }
+
  .container2 {
   width: 379px;
   margin: auto;
  }
+
+ @media (max-width: 600px) {
+  .mobile-container {
+    width: 379px;
+    margin: auto;
+  }
+}
 
  .container{
    padding: 80px 0px !important;
@@ -173,7 +182,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <div style="width: 200px; height: 50px; overflow: hidden;">
+      <a class="navbar-brand" href="#myPage" style="padding: 0px">
+        <img src="/logo_transparent.png" alt="New York" style="width: 200px; margin-top: -77px">
+      </a>
+    </div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -314,7 +327,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container">
+<div id="contact" class="container mobile-container">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
 
@@ -322,25 +335,27 @@
     <div class="col-md-4">
       <p>Fan? Drop a note.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Kansas City Missouri, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      <!-- <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p> -->
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: tyler.a.dunagan@gmail.com</p>
     </div>
     <div class="col-md-8">
+        <form method="POST" action="https://formspree.io/tyler.a.dunagan@gmail.com">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" type="name" id="name" name="name" placeholder="Your name" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Your email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea  class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn pull-right" type="submit">Send</button>
         </div>
       </div>
+        </form>
     </div>
   </div>
   <br>
@@ -355,7 +370,7 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+  <p>Created by <a href="https://jonnyparko.github.io/Jonathan-Parker/" data-toggle="tooltip" title="Visit KC Custom Stratgies">KC Custom Strategies</a></p> 
 </footer>
 
 <script>
